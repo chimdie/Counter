@@ -1,29 +1,59 @@
 *{
-    text-align: center;
     color: #123445;
+    box-sizing: border-box;
 }
 #container{
-    margin-top: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+#bar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 #count{
     font-size: 2.5rem;
     font-weight: bolder;
-    margin-bottom: -.50rem;
 }
 #value{
     font-size: 4rem;
-    margin-bottom: 1rem;
+    margin-top: -1rem;
+}
+#btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 button{
     padding: .45rem 1rem;
-    margin: 1rem;
+    margin: .50rem;
     font-size: 1rem;
     font-weight: bold;
     border-radius: .5rem;
     border: 2px solid #123445;
-
 }
 button:hover{
     background: #123445;
     color: #fff;
+}
+
+@media screen and (min-device-width: 1200px) {
+    #bar{
+        display: flex;
+        flex-direction: column;
+    }
+    #count{
+        font-size: 2.5rem;
+        font-weight: bolder;
+        margin-bottom: -.50rem;
+    }
+    button{
+        margin: 1rem;
+    }
+    #value{
+        margin-top: 2.5rem;
+    }
 }
